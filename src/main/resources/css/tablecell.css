@@ -1,0 +1,16 @@
+/* 设置复选框样式 */
+.check-box-table-cell {
+    -fx-alignment: CENTER; /* 居中对齐 */
+}
+
+/* 选中状态下的复选框样式 */
+/*.check-box-table-cell .check-box:selected {*/
+/*    -fx-background-color: #4CAF50; !* 选中时的背景颜色 *!*/
+/*    -fx-border-color: #4CAF50; !* 选中时的边框颜色 *!*/
+/*}*/
+
+/*!* 鼠标悬停时的复选框样式 *!*/
+/*.check-box-table-cell:hover .check-box {*/
+/*    -fx-background-color: #45a049; !* 鼠标悬停时的背景颜色 *!*/
+/*    -fx-border-color: #45a049; !* 鼠标悬停时的边框颜色 *!*/
+/*}*/

@@ -1,0 +1,70 @@
+/*!* TableView 样式 *!*/
+/*.table-view {*/
+/*    -fx-background-color: #2222;*/
+/*    -fx-text-fill: #000000; !* 字体颜色改为黑色 *!*/
+/*}*/
+
+/*!* TableColumn 样式 *!*/
+/*.table-column {*/
+/*    -fx-alignment: CENTER; !* 居中对齐 *!*/
+/*}*/
+
+/*!* TableHeader 样式 *!*/
+/*.table-header {*/
+/*    -fx-background-color: #FFD700; !* 表头背景颜色改为黄色 *!*/
+/*    -fx-text-fill: #000000; !* 表头文本颜色改为黑色 *!*/
+/*    -fx-font-weight: bold;*/
+/*}*/
+
+/*!* TableRow 样式 *!*/
+/*.table-row-cell {*/
+/*    -fx-background-color: #FFFFE0; !* 表格行背景颜色改为浅黄色 *!*/
+/*    -fx-border-width: 0 0 1 0; !* 设置底边框宽度为1 *!*/
+/*    -fx-border-color: #808080; !* 设置底边框颜色为灰色 *!*/
+/*}*/
+
+/*!* 选中 TableRow 样式 *!*/
+/*.table-view .table-row-cell:selected {*/
+/*    -fx-background-color: #FFD700; !* 选中行背景颜色改为黄色 *!*/
+/*    -fx-text-fill: red!important; !* 字体颜色改为黑色 *!*/
+/*}*/
+
+
+
+/*!* 悬停 TableRow 样式 *!*/
+/*.table-row-cell:hover {*/
+/*    -fx-background-color: #FFFACD; !* 鼠标悬停时的行背景颜色改为浅黄色 *!*/
+/*}*/
+
+/*!* 可编辑 TableCell 样式 *!*/
+/*.table-cell:empty {*/
+/*    -fx-background-color: #fffacd; !* 可编辑单元格的背景颜色改为灰色 *!*/
+/*    -fx-text-fill: #000000; !* 字体颜色改为黑色 *!*/
+/*}*/
+
+/*!* Pagination 样式 *!*/
+/*.pagination {*/
+/*    -fx-font-size: 12px;*/
+/*    -fx-background-color: #FFD700; !* Pagination 的背景颜色改为黄色 *!*/
+/*}*/
+
+/* 导航按钮样式 */
+.pagination .button {
+    -fx-background-color: #6495ED; /* 导航按钮背景颜色改为蓝色 */
+    -fx-text-fill: #FFFFFF; /* 导航按钮文本颜色改为白色 */
+    -fx-font-size: 12px; /* 导航按钮字体大小为12px */
+    -fx-min-width: 20px; /* 导航按钮的最小宽度 */
+    -fx-min-height: 20px; /* 导航按钮的最小高度 */
+}
+
+/*!* 导航按钮悬停样式 *!*/
+/*.pagination .button:hover {*/
+/*    -fx-background-color: #4169E1; !* 鼠标悬停时的按钮背景颜色改为深蓝色 *!*/
+/*    -fx-text-fill: #FFFFFF; !* 鼠标悬停时的按钮文本颜色改为白色 *!*/
+/*}*/
+
+/*!* 导航按钮按下样式 *!*/
+/*.pagination .button:pressed {*/
+/*    -fx-background-color: #000080; !* 导航按钮按下时的背景颜色改为深蓝色 *!*/
+/*    -fx-text-fill: #FFFFFF; !* 导航按钮按下时的文本颜色改为白色 *!*/
+/*}*/

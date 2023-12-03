@@ -1,0 +1,23 @@
+.button {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 16px;
+    -fx-background-color: #FFA500; /* 橙色，与黄色背景相协调 */
+    -fx-text-fill: #FFFFFF; /* 白色文字 */
+    -fx-border-radius: 5px; /* 圆角边框 */
+    -fx-border-color: #FFA500; /* 边框颜色与背景颜色相同 */
+}
+
+.button:hover {
+    -fx-background-color: #FF8C00; /* 鼠标悬停时的橙色 */
+}
+
+.checkoutButton {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 16px;
+    -fx-background-color: #4CAF50; /* 绿色 */
+    -fx-text-fill: #FFFFFF; /* 白色文字 */
+    -fx-border-radius: 5px; /* 圆角边框 */
+    -fx-border-color: #4CAF50; /* 边框颜色与背景颜色相同 */
+}

@@ -1,0 +1,4 @@
+/* 让表格列中的文本居中显示 */
+.table-cell {
+    -fx-alignment: CENTER;
+}

@@ -1,0 +1,20 @@
+.checkoutButton {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 16px;
+    -fx-background-color: #4CAF50; /* 绿色 */
+    -fx-text-fill: #FFFFFF; /* 白色文字 */
+    -fx-border-radius: 5px; /* 圆角边框 */
+    -fx-border-color: #4CAF50; /* 边框颜色与背景颜色相同 */
+}
+.name-label {
+    -fx-text-fill: #333333; /* 设置文字颜色为深灰色，以确保在橙色背景上有良好的可读性 */
+    -fx-font-size: 20px;
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-weight: bold;
+    -fx-padding: 5 10;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-alignment: center-right;
+    /* 添加其他样式，根据需要进行调整 */
+}

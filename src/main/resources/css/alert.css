@@ -1,0 +1,53 @@
+/* 标题栏样式 */
+.dialog-pane .header-panel {
+    -fx-background-color: #336699; /* 标题栏背景颜色 */
+}
+
+.dialog-pane .header {
+    -fx-text-fill: white; /* 标题文本颜色 */
+    -fx-font-size: 16px; /* 标题文本大小 */
+}
+
+/* 内容区域样式 */
+.dialog-pane .content {
+    -fx-background-color: #f0f0f0; /* 内容区域背景颜色 */
+    -fx-padding: 10; /* 内容区域内边距 */
+}
+
+/* 按钮样式 */
+.dialog-pane .button-bar .button {
+    -fx-background-color: #336699; /* 按钮背景颜色 */
+    -fx-text-fill: white; /* 按钮文本颜色 */
+    -fx-font-size: 14px; /* 按钮文本大小 */
+}
+
+.dialog-pane .button-bar .button:hover {
+    -fx-background-color: #275984; /* 鼠标悬停时按钮背景颜色 */
+}
+
+.dialog-pane .button-bar .button:pressed {
+    -fx-background-color: #1c4567; /* 按钮按下时的背景颜色 */
+}
+/* 标题栏字体样式 */
+.dialog-pane .header {
+    -fx-font-family: "Arial"; /* 设置字体家族 */
+    -fx-font-size: 18px; /* 设置字体大小 */
+    -fx-font-weight: bold; /* 设置字体粗细 */
+    -fx-text-fill: white; /* 设置字体颜色 */
+}
+
+/* 内容区域字体样式 */
+.dialog-pane .content {
+    -fx-font-family: "Helvetica"; /* 设置字体家族 */
+    -fx-font-size: 14px; /* 设置字体大小 */
+    -fx-font-weight: normal; /* 设置字体粗细 */
+    -fx-text-fill: black; /* 设置字体颜色 */
+}
+
+/* 按钮字体样式 */
+.dialog-pane .button-bar .button {
+    -fx-font-family: "Verdana"; /* 设置字体家族 */
+    -fx-font-size: 16px; /* 设置字体大小 */
+    -fx-font-weight: bold; /* 设置字体粗细 */
+    -fx-text-fill: white; /* 设置字体颜色 */
+}

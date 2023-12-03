@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>WarehouseSystem</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <inceptionYear>2023</inceptionYear>
+    <description>用于 XYZ 应用的 Java 项目。</description>
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- MySQL Connector Java 依赖 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.16</version>
+        </dependency>
+
+    </dependencies>
+
+    <!-- Maven 构建配置 -->
+    <build>
+        <plugins>
+            <!-- Maven Assembly 插件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.6.0</version>
+                <configuration>
+                    <!-- 指定用于创建带依赖的 JAR 的 descriptorRef -->
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <!-- 存档配置，包括指定主类的清单 -->
+                    <archive>
+                        <manifest>
+                            <mainClass>com.warehouse.system.WarehouseManagementSystem</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+                <executions>
+                    <execution>
+                        <!-- 在 package 阶段执行插件 -->
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Launch4j Maven 插件 -->
+            <plugin>
+                <groupId>com.akathist.maven.plugins.launch4j</groupId>
+                <artifactId>launch4j-maven-plugin</artifactId>
+                <version>2.4.1</version>
+                <executions>
+                    <execution>
+                        <!-- 在 package 阶段执行 Launch4j 插件 -->
+                        <id>l4j</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>launch4j</goal>
+                        </goals>
+                        <configuration>
+                            <!-- 指定标题类型（在此情况下，为 GUI 以用于 GUI 应用程序） -->
+                            <headerType>gui</headerType>
+                            <!-- 指定生成的 EXE 的输出文件 -->
+                            <outfile>target/仓库管理系统.exe</outfile>
+                            <!-- 指定要包装的 JAR 文件 -->
+                            <jar>target/WarehouseSystem-1.0-SNAPSHOT-jar-with-dependencies.jar</jar>
+                            <!-- JRE 配置 -->
+                            <jre>
+                                <path>D:\bianyiqi\JAVA\jdk-8</path>
+                                <minVersion>1.8.0</minVersion>
+                                <requires64Bit>true</requires64Bit>
+                            </jre>
+                            <!-- 版本信息，包括文件版本、文本文件版本、描述和图标 -->
+                            <versionInfo>
+                                <fileVersion>1.0.0.0</fileVersion>
+                                <txtFileVersion>1.0.0</txtFileVersion>
+                                <fileDescription>你的可执行文件描述</fileDescription>
+                                <!-- 指定图标文件的路径 -->
+                            </versionInfo>
+                            <icon>F:\Code\java\javaweb\WarehouseSystem\src\main\resources\icon\panda.ico</icon>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
